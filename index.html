@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo"></div>
+    <input type="text" class="num1" placeholder="Number 1"><br>
+    <input type="text" class="num2" placeholder="Number 2"><br>
+    <input type="button" value="addition" class="btn"><br>
+
+    <script>
+        const num1 = document.querySelector('.num1');
+        const num2 = document.querySelector('.num2');
+        const btn = document.querySelector('.btn');
+        const container = document.querySelector('.demo');
+
+        btn.addEventListener('click', ()=>{
+            const sum = parseInt(num1.value) + parseInt(num2.value);
+            container.innerText = sum;
+        })
+    </script>
+</body>
+</html>
